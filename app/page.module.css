@@ -89,6 +89,16 @@
   color: #5a5a5a;
 }
 
+.metaLink {
+  color: inherit;
+  text-decoration: none;
+  transition: color 150ms ease;
+}
+
+.metaLink:hover {
+  color: #e5e5e5;
+}
+
 /* ───── Right column (works) ───── */
 
 .worksWrap {

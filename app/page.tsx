@@ -51,9 +51,13 @@ export default function Page() {
             <span>Kolkata, India.</span>
           </div>
           <div className={styles.metaRow}>
-            <span>+91 86975 - 00538</span>
+            <a href="tel:+918697500538" className={styles.metaLink}>
+              +91 86975 - 00538
+            </a>
             <span className={styles.dot}>•</span>
-            <span>desgn.dd@gmail.com</span>
+            <a href="mailto:desgn.dd@gmail.com" className={styles.metaLink}>
+              desgn.dd@gmail.com
+            </a>
           </div>
         </footer>
       </section>

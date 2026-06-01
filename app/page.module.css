@@ -60,9 +60,11 @@
   color: #A0A0A0;
   background: transparent;
   white-space: nowrap;
+  cursor: pointer;
+  transition: background 150ms ease, color 150ms ease, border-color 150ms ease;
 }
 
-.pillActive {
+.pill:hover {
   background: #f2f2f2;
   color: #1a1a1a;
   border-color: #f2f2f2;

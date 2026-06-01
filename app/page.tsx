@@ -32,9 +32,7 @@ export default function Page() {
           {skills.map((skill) => (
             <li
               key={skill}
-              className={`${styles.pill} ${
-                skill === "Figma" ? styles.pillActive : ""
-              }`}
+              className={styles.pill}
             >
               {skill}
             </li>

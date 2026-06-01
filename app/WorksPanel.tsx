@@ -109,7 +109,7 @@ export default function WorksPanel() {
               const padStyle = {
                 paddingTop: `${i === 0 ? "164" : "50"}px`,
                 paddingBottom: `${
-                  i === projects.length - 1 ? "144" : "50"
+                  i === projects.length - 1 ? "180" : "50"
                 }px`,
               };
               const projectLabel = (

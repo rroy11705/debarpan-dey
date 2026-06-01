@@ -10,6 +10,24 @@
   margin: 0 auto;
 }
 
+/* ───── Responsive visibility ───── */
+
+.desktopOnly {
+  display: grid;
+}
+.mobileOnly {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .desktopOnly {
+    display: none !important;
+  }
+  .mobileOnly {
+    display: block;
+  }
+}
+
 /* ───── Left column ───── */
 
 .left {
@@ -258,3 +276,176 @@
   white-space: pre-line;
   line-height: 1.5;
 }
+
+/* ════════════════════════════════════════════════════════════════
+   Mobile layout  (<768px)
+   ════════════════════════════════════════════════════════════════ */
+
+.mView {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 56px 24px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+
+/* Hero -------------------------------------------------------- */
+
+.mHero {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.mName {
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  margin: 0;
+  color: #f2f2f2;
+}
+
+.mTagline {
+  font-size: 14px;
+  line-height: 1.55;
+  color: #cfcfcf;
+  margin: 0;
+}
+
+.mStats {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.mStatPill {
+  padding: 7px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+  font-size: 12.5px;
+  color: #cfcfcf;
+  background: transparent;
+  white-space: nowrap;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 150ms ease, color 150ms ease, border-color 150ms ease;
+}
+
+a.mStatPill:hover {
+  background: #f2f2f2;
+  color: #1a1a1a;
+  border-color: #f2f2f2;
+}
+
+/* Section heading -------------------------------------------- */
+
+.mSection {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.mHeading {
+  font-size: 16px;
+  font-weight: 500;
+  color: #f2f2f2;
+  margin: 0 0 4px;
+  letter-spacing: -0.01em;
+}
+
+/* Works accordion -------------------------------------------- */
+
+.mAccordion {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #303030;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #1a1a1a;
+}
+
+.mAccItem {
+  border-bottom: 1px solid #303030;
+}
+
+.mAccItem:last-child {
+  border-bottom: none;
+}
+
+.mAccHeader {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 18px 18px;
+  background: transparent;
+  border: none;
+  color: #e5e5e5;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+  cursor: pointer;
+  transition: color 150ms ease;
+}
+
+.mAccHeader:hover {
+  color: #ffffff;
+}
+
+.mAccBody {
+  padding: 0 18px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mAccRole {
+  font-size: 14px;
+  font-weight: 500;
+  color: #f2f2f2;
+}
+
+.mAccRoleLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.mAccRoleLink:hover {
+  opacity: 0.8;
+}
+
+.mAccBlurb {
+  margin: 0;
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: #c8c8c8;
+}
+
+.mAccDetail {
+  margin: 0;
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: #8a8a8a;
+}
+
+/* Skills (mobile) -------------------------------------------- */
+
+.mSkills {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+

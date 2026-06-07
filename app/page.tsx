@@ -28,7 +28,7 @@ export default function Page() {
             <div className={styles.metaRow}>
               <span>30+ Clients</span>
               <span className={styles.dot}>•</span>
-              <span>Exp: 4.6 years</span>
+              <span>Exp: 5.6 years</span>
             </div>
             <div className={styles.metaRow}>
               <span>Senior UI/UX Designer</span>

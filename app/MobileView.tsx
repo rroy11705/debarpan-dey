@@ -132,6 +132,13 @@ export default function MobileView() {
                 </li>
               );
             })}
+            <li 
+              className={`${styles.mAccItem} ${openIdx === projects.length ? styles.mAccOpen : ""}`}
+            >
+              <span className={styles.mAccFooter} >
+                And many more...
+              </span>
+            </li>
           </ul>
         </section>
 
